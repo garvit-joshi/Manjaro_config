@@ -5,7 +5,7 @@
 echo "Manjaro Setup"
 sudo pacman -Syu
 sudo pacman -S --needed base-devel
-sudo pacman -S yay llvm clang lldb php
+sudo pacman -S yay llvm clang lldb php gcc
 sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
 yay -S visual-studio-code-bin
 sudo cp assets/openinvscode.desktop /usr/share/kservices5/ServiceMenus/
