@@ -14,6 +14,9 @@ yay -S google-chrome
 git config --global user.name "Garvit Joshi"
 git config --global user.email "garvitjoshi9@gmail.com"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+# Nerd Font: https://www.nerdfonts.com/font-downloads
 sudo snap refresh
 sudo snap install telegram-desktop
 sudo snap install code --classic
