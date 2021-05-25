@@ -1,11 +1,6 @@
 {
-	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-	// same ids are connected.
-	// Example:
 	"Print to console": {
-		"prefix": "!teamp",
+		"prefix": "!cppsnippet",
 		"body": [
 			"/*",
 			"Created by-Garvit Joshi",
@@ -13,40 +8,42 @@
 			"https://github.com/garvit-joshi",
 			"g++ -std=c++11 -O2 -Wall test.cpp -o test",
 			"*/",
+			"",
 			"#include <bits/stdc++.h>",
 			"",
 			"using namespace std;",
 			"",
-			"typedef long long ll;",
+			"// #define int long long int",
 			"typedef vector<int> vi;",
-			"typedef pair<int,int> pi;",
+			"typedef pair<int, int> pi;",
 			"#define F first",
 			"#define S second",
 			"#define PB push_back",
 			"#define MP make_pair",
-			"#define REP(i,a,b) for (int i = a; i <= b; i++)",
 			"",
-			"void solve() {",
-			"	$0",
+			"void solve()",
+			"{",
+			"\t$1",
 			"}",
 			"",
+			"int main()",
+			"{",
 			"",
-			"int main() {",
+			"\t// ios::sync_with_stdio(0);",
+			"\t// cin.tie(0);",
 			"",
-			"	ios::sync_with_stdio(0);",
-			"	cin.tie(0);",
+			"\t// freopen(\"input.txt\", \"r\", stdin);   //Input from a file",
+			"\t// freopen(\"output.txt\", \"w\", stdout);   //Output to a file",
 			"",
-			"	//freopen(\"input.txt\", \"r\", stdin);   //Input from a file",
-			"	//freopen(\"output.txt\", \"w\", stdout);   //Output to a file",
-			"",
-			"	int tc;",
-			"	cin >> tc;",
-			"	while(abs(tc--)) {",
-			"		solve();",
-			"	}",
-			"	return 0;",
+			"\tint tc;",
+			"\tcin >> tc;",
+			"\twhile (abs(tc--))",
+			"\t{",
+			"\t\tsolve();",
+			"\t}",
+			"\treturn 0;",
 			"}"
 		],
-		"description": "Log output to console"
+		"description": "C++ Snippet"
 	}
 }

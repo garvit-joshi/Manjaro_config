@@ -7,10 +7,11 @@ sudo pacman -Syu
 sudo pacman -S --needed base-devel
 sudo pacman -S yay llvm clang lldb php gcc qt6-base libsecret seahorse
 sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
-sudo cp assets/openinvscode.desktop /usr/share/kservices5/ServiceMenus/
 yay -S lldb-mi-git
 yay -S teamviewer
 yay -S google-chrome
+yay -S visual-studio-code-bin
+sudo cp assets/openinvscode.desktop /usr/share/kservices5/ServiceMenus/
 
 # git confiigure
 git config --global user.name "Garvit Joshi"
