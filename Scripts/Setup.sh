@@ -17,11 +17,13 @@ sudo cp assets/openinvscode.desktop /usr/share/kservices5/ServiceMenus/
 git config --global user.name "Garvit Joshi"
 git config --global user.email "garvitjoshi9@gmail.com"
 
-# omz and powerline
+# omz, powerline and nvm
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
 
 # Pyenv: Python Environment
 echo "Set Pyenv: https://github.com/pyenv/pyenv" 
@@ -34,5 +36,4 @@ echo "Nerd Font: https://www.nerdfonts.com/font-downloads"
 # snap
 sudo snap refresh
 sudo snap install telegram-desktop
-sudo snap install code --classic
 echo "Done"
