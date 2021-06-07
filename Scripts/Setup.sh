@@ -3,6 +3,7 @@
 
 # Setup Manjaro Script
 echo "Manjaro Setup"
+sudo pacman-mirrors --api --set-branch unstable
 sudo pacman -Syu
 sudo pacman -S --needed base-devel
 sudo pacman -S yay llvm clang lldb php gcc qt6-base libsecret seahorse
