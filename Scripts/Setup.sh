@@ -15,7 +15,7 @@ yay -S visual-studio-code-bin
 yay -S neovim-nightly-bin
 sudo cp assets/openinvscode.desktop /usr/share/kservices5/ServiceMenus/
 
-# git confiigure
+# git configure
 git config --global user.name "Garvit Joshi"
 git config --global user.email "garvitjoshi9@gmail.com"
 
