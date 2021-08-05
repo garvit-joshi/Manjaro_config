@@ -14,6 +14,7 @@ python3.9 -m venv env
 source env/bin/activate
 pip install -U pip wheel
 pip install -r requirements.txt
+deactivate
 cd ..
 git clone https://github.com/AWS-Cloud-Community-LPU/Ada_TelegramBot.git
 cd Ada_TelegramBot
@@ -21,6 +22,7 @@ python3.9 -m venv env
 source env/bin/activate
 pip install -U pip wheel
 pip install -r requirements.txt
+deactivate
 cd ..
 git clone https://github.com/garvit-joshi/Aster_TelegramBot.git
 cd Aster_TelegramBot
@@ -28,5 +30,6 @@ python3.9 -m venv env
 source env/bin/activate
 pip install -U pip wheel
 pip install -r requirements.txt
+deactivate
 cd ..
 sudo reboot
