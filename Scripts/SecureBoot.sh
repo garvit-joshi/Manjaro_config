@@ -1,10 +1,6 @@
 #!/bin/bash
 
 
-# Setup Secure Boot:
-# 1. change /boot/efi in /etc/fstab to just /efi
-# 2. create /efi with sudo mkdir /efi
-# 3. re-mount your efi partition with sudo mount -a
 mkdir -p -v /etc/efikeys
 chmod -v 700 /etc/efikeys
 cd /etc/efikeys
