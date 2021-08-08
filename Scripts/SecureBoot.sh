@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sudo su
+# chmod +x SecureBoot.sh
 # Link: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Configuring_Secure_Boot#Saving_Current_Keystore_Values.2C_and_Creating_New_Keys
 mkdir -p -v /etc/efikeys
 chmod -v 700 /etc/efikeys
@@ -25,3 +27,4 @@ cat old_KEK.esl KEK.esl > compound_KEK.esl
 cat old_db.esl db.esl > compound_db.esl
 sign-efi-sig-list -k PK.key -c PK.crt KEK compound_KEK.esl compound_KEK.auth
 sign-efi-sig-list -k KEK.key -c KEK.crt db compound_db.esl compound_db.auth
+cp -v *.{auth,cer,crt,esl} /boot/efi/
