@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# Link: https://wiki.gentoo.org/wiki/User:Sakaki/Sakaki%27s_EFI_Install_Guide/Configuring_Secure_Boot#Saving_Current_Keystore_Values.2C_and_Creating_New_Keys
 mkdir -p -v /etc/efikeys
 chmod -v 700 /etc/efikeys
 cd /etc/efikeys
