@@ -6,6 +6,8 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
 sudo echo "ZONE=\"Asia/Kolkata\"" > /etc/sysconfig/clock
 sudo apt update
 sudo apt upgrade -y
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
 sudo apt install python3.9 git screen python3.9-venv python3-pip -y
 cd /home/ubuntu
 git clone https://github.com/AWS-Cloud-Community-LPU/Twitter-Bot.git
