@@ -36,4 +36,11 @@ pip install -U pip wheel
 pip install -r requirements.txt
 deactivate
 cd ..
+git clone https://github.com/AWS-Cloud-Community-LPU/Discord-Bot.git
+cd Discord-Bot
+virtualenv env
+source env/bin/activate
+pip install -U pip wheel
+pip install -r requirements.txt
+deactivate
 sudo reboot
