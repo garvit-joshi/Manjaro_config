@@ -44,3 +44,10 @@ pip install -U pip wheel
 pip install -r requirements.txt
 deactivate
 sudo reboot
+
+
+# Download files from AWS EC2
+scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Aster_TelegramBot /home/garvit-joshi/Projects
+scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Ada_TelegramBot /home/garvit-joshi/Projects
+scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Twitter-Bot /home/garvit-joshi/Projects
+scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Discord-Bot /home/garvit-joshi/Projects
