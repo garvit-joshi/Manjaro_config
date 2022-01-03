@@ -8,8 +8,11 @@ sudo apt update
 sudo apt upgrade -y
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
-sudo apt install python3.9 git screen python3.9-venv python3-pip -y
-python3.9 -m pip install --user virtualenv
+sudo apt install python3.10-full git screen python3.10-venv -y
+curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3.10 get-pip.py
+rm get-pip.py
+pip install --user -U virtualenv
 sudo reboot
 cd /home/ubuntu
 git clone https://github.com/AWS-Cloud-Community-LPU/Twitter-Bot.git
