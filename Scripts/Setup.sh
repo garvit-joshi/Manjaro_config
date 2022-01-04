@@ -6,7 +6,7 @@ echo "Manjaro Setup"
 sudo pacman-mirrors --api --set-branch unstable
 sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
 sudo pacman -S --needed base-devel
-sudo pacman -S yay llvm clang lldb php gcc qt6-base libsecret seahorse cmake postgresql
+sudo pacman -S yay llvm clang lldb php gcc qt6-base libsecret seahorse cmake postgresql redis
 # Latest Java
 sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
 # Java 8
