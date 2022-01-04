@@ -6,13 +6,13 @@ echo "Manjaro Setup"
 sudo pacman-mirrors --api --set-branch unstable
 sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
 sudo pacman -S --needed base-devel
-sudo pacman -S yay llvm clang lldb php gcc qt6-base libsecret seahorse cmake
+sudo pacman -S yay llvm clang lldb php gcc qt6-base libsecret seahorse cmake postgresql
+# Latest Java
 sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
+# Java 8
+sudo pacman -S jre8-openjdk-headless jre8-openjdk jdk8-openjdk openjdk8-doc openjdk8-src
 sudo pacman -S noto-fonts-emoji
-yay -S lldb-mi-git
-yay -S google-chrome
-yay -S visual-studio-code-bin
-yay -S neovim-nightly-bin
+yay -S lldb-mi-git spring-tool-suite google-chrome visual-studio-code-bin neovim-nightly-bin remmina-git kafka dbeaver postman-bin slack-desktop
 sudo cp assets/openinvscode.desktop /usr/share/kservices5/ServiceMenus/
 
 # git configure
@@ -26,11 +26,8 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 
-# Pyenv: Python Environment, NVM
-echo "Set Pyenv: https://github.com/pyenv/pyenv" 
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-cd ~/.pyenv && src/configure && make -C src
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | zsh
+# NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 
 # Nerd Font
 echo "Nerd Font: https://www.nerdfonts.com/font-downloads"
