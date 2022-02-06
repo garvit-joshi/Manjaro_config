@@ -54,3 +54,16 @@ scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Aster_TelegramBot /home/garvit-j
 scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Ada_TelegramBot /home/garvit-joshi/Projects
 scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Twitter-Bot /home/garvit-joshi/Projects
 scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Discord-Bot /home/garvit-joshi/Projects
+
+
+## Configuring Bots after System Restart
+# Before Restart
+pip install -U pip wheel
+pip install --user -U virtualenv
+# After Restart
+rm -r env/
+virtualenv env
+source env/bin/activate
+pip install -U pip wheel
+pip install -r requirements.txt
+deactivate
