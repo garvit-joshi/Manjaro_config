@@ -62,6 +62,7 @@ pip install -U pip wheel
 pip install --user -U virtualenv
 # After Restart
 rm -r env/
+git pull
 virtualenv env
 source env/bin/activate
 pip install -U pip wheel
