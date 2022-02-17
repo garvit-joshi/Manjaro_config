@@ -61,6 +61,7 @@ scp -i "MyAWSKey.pem" -r ubuntu@IP:/home/ubuntu/Discord-Bot /home/garvit-joshi/P
 pip install -U pip wheel
 pip install --user -U virtualenv
 # After Restart
+cd Aster_TelegramBot/
 rm -r env/
 git pull
 virtualenv env
@@ -68,3 +69,32 @@ source env/bin/activate
 pip install -U pip wheel
 pip install -r requirements.txt
 deactivate
+cd ..
+cd Ada_TelegramBot/
+rm -r env/
+git pull
+virtualenv env
+source env/bin/activate
+pip install -U pip wheel
+pip install -r requirements.txt
+deactivate
+cd ..
+cd Twitter-Bot/
+rm -r env/
+git pull
+virtualenv env
+source env/bin/activate
+pip install -U pip wheel
+pip install -r requirements.txt
+deactivate
+cd ..
+cd Discord-Bot/
+rm -r env/
+git pull
+virtualenv env
+source env/bin/activate
+pip install -U pip wheel
+pip install -r requirements.txt
+deactivate
+cd ..
+
