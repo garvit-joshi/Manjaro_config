@@ -98,3 +98,30 @@ pip install -r requirements.txt
 deactivate
 cd ..
 
+
+
+# PM2 Install
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+npm install -g npm@latest
+npm install -u pm2@latest -g
+# PM2 Config
+cd Aster_TelegramBot/
+source env/bin/activate
+pm2 start main.py --name Aster
+deactivate
+cd ..
+cd Ada_TelegramBot/
+source env/bin/activate
+pm2 start main.py --name Ada
+deactivate
+cd ..
+cd Twitter-Bot/
+source env/bin/activate
+pm2 start main.py --name Twitter
+deactivate
+cd ..
+cd Discord-Bot/
+source env/bin/activate
+pm2 start main.py --name Discord
+deactivate
+cd ..
