@@ -103,7 +103,7 @@ cd ..
 # PM2 Install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 npm install -g npm@latest
-npm install -u pm2@latest -g
+npm install -g pm2@latest
 # PM2 Config
 cd Aster_TelegramBot/
 source env/bin/activate
