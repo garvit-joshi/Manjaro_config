@@ -102,6 +102,7 @@ cd ..
 
 # PM2 Install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install 18
 npm install -g npm@latest
 npm install -g pm2@latest
 # PM2 Config
